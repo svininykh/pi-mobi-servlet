@@ -12,13 +12,13 @@
                        pageid="home">
 
     <stripes:layout-component name="header">
-        <h2>
-            <stripes:label name="label.HomeServlet" />
-        </h2>
+        <h1 role="heading" aria-level="1">
+            <stripes:label name="label.HelloGuest" />
+        </h1>
         <sdynattr:link href="/Home.action"
                        event="info"
-                       class="ui-btn-right"
-                       data-icon="info">
+                       class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-left ui-shadow ui-corner-all"
+                       role="button">
             <stripes:label name="label.information" />
         </sdynattr:link>
     </stripes:layout-component>
@@ -26,14 +26,15 @@
     <stripes:layout-component name="content">
         <stripes:errors/>
         <stripes:form action="/HelloGuest.action" focus="">
-            <div data-role="fieldcontainer">
-                <stripes:label name="label.question.what.name"
-                               for="whatname"/>
-                <sdynattr:text name="guestName"
-                               id="whatname"
+            <div class="ui-field-contain">
+                <stripes:label name="label.your.name"
+                               for="guestName"/>
+                <sdynattr:text type="text"
+                               name="guestName"
+                               id="guestName"
                                data-clear-btn="true" />
             </div>
-            <stripes:submit name="helloGuest"/>
+            <stripes:submit name="send"/>
         </stripes:form>
     </stripes:layout-component>
 

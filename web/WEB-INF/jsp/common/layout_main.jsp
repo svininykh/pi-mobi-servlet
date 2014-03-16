@@ -15,23 +15,24 @@
     <html>
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <title>${title} - Raspberry Pi Mobi Servlet</title>
-            <link rel="stylesheet" href="<c:url value='/css/jquery.mobile-1.3.2.min.css'/>" />
+            <meta name="viewport" content="width=900, initial-scale=1" />
+            <title>${title} - Stripes Framework Mobi Servlet</title>
+            <link rel="stylesheet" href="<c:url value='/css/jquery.mobile-1.4.2.css'/>" />
+            <link rel="stylesheet" href="<c:url value='/css/stripes.mobile.css'/>" />
             <link rel="icon" type="image/png" href="<c:url value='/icon.png' />" />
-            <script src="<c:url value='/js/jquery-1.9.1.min.js'/>"></script>
-            <script src="<c:url value='/js/jquery.mobile-1.3.2.min.js'/>"></script>
+            <script src="<c:url value='/js/jquery-1.11.0.min.js'/>"></script>
+            <script src="<c:url value='/js/jquery.mobile-1.4.2.min.js'/>"></script>
         </head>
         <body>
             <div data-role="page" id="${pageid}">
-                <div data-theme="b" data-role="header" class="ui-header ui-bar-b" role="banner">
+                <div data-role="header" role="banner">
                     <stripes:layout-component name="header"/>
                 </div>
                 <div data-role="content" style="padding: 15px" align="center">
                     <stripes:layout-component name="content"/>
                 </div>
-                <div data-theme="b" data-role="footer">
-                    <h2 class="ui-footer" role="footing">
+                <div data-role="footer">
+                    <h2 role="footing">
                         2014
                     </h2>
                     <stripes:layout-component name="footer"/>

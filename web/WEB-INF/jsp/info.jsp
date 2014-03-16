@@ -12,13 +12,13 @@
 
     <stripes:layout-component name="header">
         <sdynattr:link href="/Home.action"
-                       class="ui-btn-left"
-                       data-icon="bars">
-            <stripes:label name="label.home" />
-        </sdynattr:link>
-        <h2>
+                       class="ui-btn-left ui-btn ui-icon-home ui-btn-icon-left ui-shadow ui-corner-all"
+                       role="button">
             <stripes:label name="label.information" />
-        </h2>
+        </sdynattr:link>
+        <h1 role="heading" aria-level="1">
+            <stripes:label name="label.information" />
+        </h1>
     </stripes:layout-component>
 
     <stripes:layout-component name="content">
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="ui-block-b">
-                <div class="ui-body ui-body-d">
+                <div class="ui-body ui-body-c">
                     <c:out value="${actionBean.javaVersion}" />
                 </div>
             </div>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="ui-block-b">
-                <div class="ui-body ui-body-d">
+                <div class="ui-body ui-body-c">
                     <c:out value="${actionBean.operationSystem}" />
                 </div>
             </div>
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="ui-block-b">
-                <div class="ui-body ui-body-d">
+                <div class="ui-body ui-body-c">
                     <c:out value="${actionBean.serverInfo}" />
                 </div>
             </div>
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="ui-block-b">
-                <div class="ui-body ui-body-d">
+                <div class="ui-body ui-body-c">
                     <c:out value="${actionBean.language}" />
                 </div>
             </div>

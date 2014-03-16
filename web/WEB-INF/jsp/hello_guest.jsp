@@ -25,7 +25,7 @@
     <stripes:layout-component name="content">
         <div class="ui-grid-solo">
             <div class="ui-block-a">
-                <div class="ui-bar ui-bar-e">
+                <div class="ui-bar ui-bar-b">
                     <c:out value="${actionBean.guestName}" />
                 </div>
             </div>
