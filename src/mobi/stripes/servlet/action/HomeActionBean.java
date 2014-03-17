@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2014 Nord Trading Ltd.
  */
-package mobi.piservlet.action;
+package mobi.stripes.servlet.action;
 
 import net.sourceforge.stripes.action.DefaultHandler;
 import net.sourceforge.stripes.action.ForwardResolution;
@@ -13,12 +13,29 @@ import net.sourceforge.stripes.action.Resolution;
 public class HomeActionBean extends BaseActionBean {
 
     private static final String HOME = "/WEB-INF/jsp/home.jsp";
-    private static final String INFO = "/WEB-INF/jsp/info.jsp";
 
     @DefaultHandler
     public Resolution home() {
         return new ForwardResolution(HOME);
     }
+
+    private static final String WELCOME = "/WEB-INF/jsp/welcome_guest.jsp";
+
+    private String guestName;
+
+    public Resolution welcome() {
+        return new ForwardResolution(WELCOME);
+    }
+
+    public String getGuestName() {
+        return guestName;
+    }
+
+    public void setGuestName(String guestName) {
+        this.guestName = guestName;
+    }
+
+    private static final String INFO = "/WEB-INF/jsp/info.jsp";
 
     public Resolution info() {
         return new ForwardResolution(INFO);

@@ -12,9 +12,9 @@
                        pageid="home">
 
     <stripes:layout-component name="header">
-        <h1 role="heading" aria-level="1">
+        <h2 role="heading" aria-level="1">
             <stripes:label name="label.HelloGuest" />
-        </h1>
+        </h2>
         <sdynattr:link href="/Home.action"
                        event="info"
                        class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-left ui-shadow ui-corner-all"
@@ -25,7 +25,7 @@
 
     <stripes:layout-component name="content">
         <stripes:errors/>
-        <stripes:form action="/HelloGuest.action" focus="">
+        <stripes:form action="/Home.action?welcome">
             <div class="ui-field-contain">
                 <stripes:label name="label.your.name"
                                for="guestName"/>

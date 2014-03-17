@@ -8,13 +8,13 @@
 <%@include file="/WEB-INF/jsp/common/taglibs.jsp"%>
 <stripes:layout-render name="/WEB-INF/jsp/common/layout_main.jsp"
                        title="Information"
-                       pageid="info">
+                       pageid="information">
 
     <stripes:layout-component name="header">
         <sdynattr:link href="/Home.action"
                        class="ui-btn-left ui-btn ui-icon-home ui-btn-icon-left ui-shadow ui-corner-all"
                        role="button">
-            <stripes:label name="label.information" />
+            <stripes:label name="label.home" />
         </sdynattr:link>
         <h1 role="heading" aria-level="1">
             <stripes:label name="label.information" />

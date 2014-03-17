@@ -13,24 +13,24 @@
         <param-value>StripesResources</param-value>
     </context-param>
 
-<!--
-        <context-param>
-            <param-name>db.driver</param-name>
-            <param-value>org.apache.derby.jdbc.ClientDriver</param-value>
-        </context-param>
-        <context-param>
-            <param-name>db.URL</param-name>
-            <param-value>jdbc:derby://localhost:1527/nordpos-db</param-value>
-        </context-param>
+    <!--
             <context-param>
-            <param-name>db.user</param-name>
-            <param-value>nord</param-value>
-        </context-param>
+                <param-name>db.driver</param-name>
+                <param-value>org.apache.derby.jdbc.ClientDriver</param-value>
+            </context-param>
             <context-param>
-            <param-name>db.password</param-name>
-            <param-value>nord</param-value>
-        </context-param>
--->
+                <param-name>db.URL</param-name>
+                <param-value>jdbc:derby://localhost:1527/nordpos-db</param-value>
+            </context-param>
+                <context-param>
+                <param-name>db.user</param-name>
+                <param-value>nord</param-value>
+            </context-param>
+                <context-param>
+                <param-name>db.password</param-name>
+                <param-value>nord</param-value>
+            </context-param>
+    -->
 
     <filter>
         <filter-name>StripesFilter</filter-name>
@@ -39,7 +39,7 @@
         <!-- STRIPES ACTIONS -->
         <init-param>
             <param-name>ActionResolver.Packages</param-name>
-            <param-value>mobi.piservlet</param-value>
+            <param-value>mobi.stripes.servlet</param-value>
         </init-param>
 
         <!-- STRIPES LOCALES -->
