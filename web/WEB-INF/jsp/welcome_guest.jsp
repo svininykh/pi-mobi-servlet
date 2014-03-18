@@ -26,7 +26,9 @@
         <div class="ui-grid-solo">
             <div class="ui-block-a">
                 <div class="ui-bar ui-bar-b">
-                    <c:out value="${actionBean.guestName}" />
+                    <stripes:label name="label.Welcome" />
+                    <strong><c:out value="${actionBean.guestName}" /></strong>
+                    <stripes:label name="label.toStripes" />
                 </div>
             </div>
         </div>
