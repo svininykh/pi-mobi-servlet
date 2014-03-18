@@ -25,7 +25,7 @@
 
     <stripes:layout-component name="content">
         <stripes:errors/>
-        <stripes:form action="/Home.action?welcome">
+        <stripes:form action="/Welcome.action?welcome">
             <div class="ui-field-contain">
                 <stripes:label name="label.your.name"
                                for="guestName"/>

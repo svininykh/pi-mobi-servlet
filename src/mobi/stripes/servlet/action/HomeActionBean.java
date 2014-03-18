@@ -19,22 +19,6 @@ public class HomeActionBean extends BaseActionBean {
         return new ForwardResolution(HOME);
     }
 
-    private static final String WELCOME = "/WEB-INF/jsp/welcome_guest.jsp";
-
-    private String guestName;
-
-    public Resolution welcome() {
-        return new ForwardResolution(WELCOME);
-    }
-
-    public String getGuestName() {
-        return guestName;
-    }
-
-    public void setGuestName(String guestName) {
-        this.guestName = guestName;
-    }
-
     private static final String INFO = "/WEB-INF/jsp/info.jsp";
 
     public Resolution info() {
