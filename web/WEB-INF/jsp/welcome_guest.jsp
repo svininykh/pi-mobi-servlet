@@ -23,14 +23,10 @@
     </stripes:layout-component>
 
     <stripes:layout-component name="content">
-        <div class="ui-grid-solo">
-            <div class="ui-block-a">
-                <div class="ui-bar ui-bar-b">
+        <div class="ui-body ui-body-b ui-corner-all">
                     <stripes:label name="label.Welcome" />
                     <strong><c:out value="${actionBean.guestName}" /></strong>
-                    <stripes:label name="label.toStripes" />
-                </div>
-            </div>
+                    <stripes:label name="label.toStripes" />                
         </div>
     </stripes:layout-component>
 
