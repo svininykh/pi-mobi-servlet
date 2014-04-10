@@ -1,14 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * Copyright (c) 2014 Nord Trading Ltd.
  */
 package mobi.stripes.servlet.dao;
 
 import com.mongodb.Mongo;
 import mobi.stripes.servlet.model.Guest;
-import org.mongodb.morphia.Morphia;
-import org.mongodb.morphia.dao.BasicDAO;
+import com.google.code.morphia.Morphia;
+import com.google.code.morphia.dao.BasicDAO;
 
 /**
  *

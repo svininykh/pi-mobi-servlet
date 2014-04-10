@@ -15,9 +15,9 @@ import mobi.stripes.servlet.model.Log;
 import net.sourceforge.stripes.action.ForwardResolution;
 import net.sourceforge.stripes.action.Resolution;
 import net.sourceforge.stripes.validation.Validate;
-import org.mongodb.morphia.Datastore;
-import org.mongodb.morphia.query.Query;
-import org.mongodb.morphia.query.QueryResults;
+import com.google.code.morphia.Datastore;
+import com.google.code.morphia.query.Query;
+import com.google.code.morphia.query.QueryResults;
 
 /**
  * @author Andrey Svininykh <svininykh@gmail.com>
